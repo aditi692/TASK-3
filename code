@@ -1,0 +1,27 @@
+#Code
+
+SELECT * FROM Customers;
+
+SELECT name, city FROM Customers;
+
+SELECT * FROM Orders;
+
+SELECT * FROM Orders WHERE status = 'Pending';
+
+SELECT * FROM Customers 
+WHERE city = 'Mumbai' AND phone = '9876543210';
+
+SELECT * FROM Customers 
+WHERE city = 'Delhi' OR city = 'Mumbai';
+
+SELECT * FROM Customers 
+WHERE email LIKE '%example%';
+
+SELECT * FROM Orders 
+WHERE total_amount BETWEEN 500 AND 1500;
+
+SELECT * FROM Orders 
+ORDER BY total_amount ASC;
+
+SELECT * FROM Orders 
+ORDER BY total_amount DESC;
